@@ -1,0 +1,113 @@
+package edu.fju.exam;
+
+import java.util.Scanner;
+
+public class VendingMachine {
+
+	public static void main(String[] args) {
+		int price =0;
+		for(int i=0;i>=0;i++){
+			Drink d1 = new Drink();
+	        Drink d2 = new Drink("a",10);
+	        Drink d3 = new Drink("b",15);
+	        Drink d4 = new Drink("c",10);
+	        Drink d5 = new Drink("d",18);
+	        Drink d6 = new Drink("e",10);
+	        Drink d7 = new Drink("f",20);
+	        Drink d8 = new Drink("g",15);
+	        Drink d9 = new Drink("h",18);
+			System.out.println("販賣機餘額:"+price);
+			System.out.println("請投幣或選飲料(a,b,c,d,e,f,g,h)");
+			Scanner scanner = new Scanner(System.in);
+			String line =scanner.nextLine();
+			switch(line){
+			case"1":
+				price = price+1;
+				break;
+			case"5":
+				price = price+5;
+				break;	
+			case"10":
+				price = price+10;
+				break;
+			case"a":
+				price = price-10;
+				if(price>=0){
+					System.out.println("DON!");
+				}else{
+					price =price+10;
+					System.out.println("BEEP!");
+					}
+				break;
+			case"b":
+				price = price-15;
+				if(price>=0){
+					System.out.println("DON!");
+				}else{
+					price =price+15;
+					System.out.println("BEEP!");
+					}
+				break;
+			case"c":
+				price = price-10;
+				if(price>=0){
+					System.out.println("DON!");
+				}else{
+					price =price+10;
+					System.out.println("BEEP!");
+					}
+				break;
+			case"d":
+				price = price-18;
+				if(price>=0){
+					System.out.println("DON!");
+				}else{
+					price =price+18;
+					System.out.println("BEEP!");
+					}
+				break;
+			case"e":
+				price = price-10;
+				if(price>=0){
+					System.out.println("DON!");
+				}else{
+					price =price+10;
+					System.out.println("BEEP!");
+					}
+				break;
+				
+			case"f":
+				price = price-20;
+				if(price>=0){
+					System.out.println("DON!");
+				}else{
+					price =price+20;
+					System.out.println("BEEP!");
+					}
+				break;
+			case"g":
+				price = price-15;
+				if(price>=0){
+					System.out.println("DON!");
+				}else{
+					price =price+15;
+					System.out.println("BEEP!");
+					}
+				break;
+			case"h":
+				price = price-18;
+				if(price>=0){
+					System.out.println("DON!");
+				}else{
+					price =price+18;
+					System.out.println("BEEP!");
+					}
+				break;
+			case"0":
+				return;
+			}
+			
+		}
+	}
+
+}

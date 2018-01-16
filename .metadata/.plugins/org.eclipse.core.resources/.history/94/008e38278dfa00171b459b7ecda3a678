@@ -1,0 +1,13 @@
+package edu.fju.exam;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Employee> employeea =new ArrayList<>();
+		employeea.add(new Employee("Jack",25000));
+		
+	}
+
+}

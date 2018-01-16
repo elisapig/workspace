@@ -1,0 +1,35 @@
+package edu.fju.exam;
+
+public class Bubble {
+
+	public static void main(String[] args) {
+		int n[] = { 45, 81, 9, 72, 4, 6 };
+		for (int i = 0; i < n.length - 1; i++) {
+			for (int j = 0; j < n.length - 1; j++) {
+				if (n[j + 1] > n[j]) {
+					int tmp = n[j];
+					n[j] = n[j + 1];
+					n[j + 1] = tmp;
+
+				}
+			}
+		}
+		for (int i = 0; i < n.length; i++) {
+			System.out.print(n[i] + " ");
+		}
+		int a[] ={6,5,2,8,1,9,13,4,11,7};
+		for(int k =0; k<n.length-1;k++){
+			for(int m =0;m<n.length-1;m++){
+				if(n[m+1]>n[m]){
+					int tmp =n[m];
+					n[m]=n[m+1];
+					n[m+1]=tmp;
+				}
+			}
+		}
+		for(int k=0;k<n.length;k++){
+			System.out.print(n[k]+" ");
+		}
+	}
+}
+ 	

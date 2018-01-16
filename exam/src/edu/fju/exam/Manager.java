@@ -1,0 +1,19 @@
+package edu.fju.exam;
+
+public class Manager extends Employee {
+	String name;
+	int amount;
+	
+	public Manager(String name,int amount){
+	this.name =name;
+	this.amount = amount;
+	}
+		@Override
+		public void print(){
+		
+	
+	
+	
+	
+	}
+}
